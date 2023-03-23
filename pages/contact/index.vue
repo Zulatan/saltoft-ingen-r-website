@@ -1,19 +1,20 @@
 <template>
   <div>
     <h1>rdy</h1>
-    <input type="text" v-model="name">
-    <input type="text" v-model="subject">
-    <input type="text" v-model="message">
-    <input type="text" v-model="from">
-    <button v-on:click="getDataFraSymfony()">Klik på mig</button>
+    <input v-model="name" type="text">
+    <input v-model="subject" type="text">
+    <input v-model="message" type="text">
+    <input v-model="from" type="text">
+    <button v-on:click="sendEmail()">Klik på mig</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
-    data(){
-    return{
+    layout: 'noheader',
+    name: 'ContactPage',
+    data () {
+    return {
       name: '',
       message: '',
       subject: '',
@@ -21,18 +22,24 @@ export default {
     }
   },
 methods: {
-    sendEmail(){
+    displayOutput(response) {
+        console.log(response)
+    },
+    sendEmail () {
       let self = this;
-      axios
+        this.$axios
       .post("http://mikkel.sunland.dk/s4/public/emails/sendgrid", {
         subject: self.subject,
         name: self.name,
         from: self.from,
         message: self.message
       })
-      .then((response) => displayOutput(response))
+      .then((response) => self.displayOutput(response))
       .catch((err) => console.log(err));
     }
   }
 }
 </script>
+
+<style lang="scss">
+</style>

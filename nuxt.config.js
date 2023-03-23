@@ -1,4 +1,19 @@
 export default {
+  // sass import below
+  build: {
+    loaders: {
+      sass: {
+        implementation: require('sass'),
+        fiber: require('fibers'),
+        sassOptions: {
+          indentedSyntax: true // For using Sass indent syntax instead of SCSS
+        }
+      }
+    }
+  },
+  server: {
+    port: 4500
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -7,7 +22,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'siapp',
+    title: 'Saltoft Ingeniør A/S',
     htmlAttrs: {
       lang: 'en'
     },
@@ -24,6 +39,9 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "@/assets/scss/_variables.scss",
+    "@/assets/scss/_fonts.scss",
+    "@/assets/scss/global.scss"
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -36,7 +54,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+    // '@nuxtjs/eslint-module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
