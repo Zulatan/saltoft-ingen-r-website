@@ -1,77 +1,18 @@
 @import 'variables';
 @import 'fonts';
 
-// navigation bar
-.nav-wrapper {
-    position: absolute;
-    width: 100%;
-    .nav-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 40px 80px;
-    }
-    // nav-left
-    .nav-left {
-        background-image: url('/images/si-logo.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 40px;
-        width: 40px;
-        position: relative;
-        z-index: 5;
-    }
-    .nav-right {
-        display: flex;
-        position: relative;
-        z-index: 5;
-        font-family: $nav-font;
-        font-weight: 300;
-        font-style: normal;
-        
-        a {
-            text-decoration: none;
-            color: $secondary-color;
-            position: relative;
-        }
-        a::before {
-            content: "";
-            position: absolute;
-            width: 0%;
-            height: 2px;
-            bottom: -2px;
-            left: 50%;
-            background-color: $primary-color;
-            transition: all .15s ease-in-out;
-        }
-        a:hover::before {
-            width: 100%;
-            left: 0;
-          }
-        .link-wrapper {
-            padding: 5px 35px 5px 0;
-        }
-        .link-wrapper:nth-child(3) {
-            padding: 5px 0 5px 0;
-        }
-    }
-}
-
-
-
 // hero content stuff
 .hero-content-wrapper {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 70px;
-    padding: 200px 80px;
+    padding: 140px 40px;
     .content-header-container {
         max-width: 550px;
-        padding-bottom: 80px;
+        padding-bottom: 40px;
         h1 {
-            font-family: $text-font;
+            font-family: $poppins;
             font-weight: 800;
             font-style: normal;
             font-size: 42px;
@@ -86,8 +27,8 @@
         padding-bottom: 60px;
         p {
             color: $secondary-color;
-            font-family: $text-font;
-            font-weight: 400;
+            font-family: $poppins;
+            font-weight: 200;
             font-style: normal;
             font-size: 14px;
             line-height: 24px;
@@ -103,8 +44,9 @@
             padding: 10px 35px;
             background-color: $primary-color;
             font-family: "futura-pt", sans-serif;
-            font-weight: 400;
+            font-weight: 300;
             font-style: normal;
+            font-size: 14px;
             transition: background-color .4s, border .4s, color .4s;
             &:hover {
                 background-color: $secondary-color;
@@ -140,16 +82,6 @@
         position: relative;
         z-index: -1;
     }
-    // background-image: url("../images/hero-img.jpg");
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // height: 100vh;
-    // position: relative;
-    // padding: 20px 80px;
-    // z-index: 1;
-
-
 
     // hero overlay
     .hero-overlay-wrapper {
@@ -174,6 +106,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 100px;
+    padding-bottom: 100px;
     background-color: white;
     .header-container {
         display: flex;
@@ -247,56 +180,6 @@
             height: 25px;
             width: 25px;
             position: relative;
-        }
-    }
-}
-
-// parralax scroll section
-#parallax {
-    position: relative;
-    .parallax-text-overlay {
-        height: 80vh;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-        background-color: black;
-        opacity: 20%;
-    }
-    .parallax-text-container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        p {
-            margin: 0;
-            position: relative;
-            color: $secondary-color;
-        }
-    }
-    .parallax-image-wrapper {
-        margin-top: -100vh;
-        height: 180vh;
-        width: 100%;
-        position: absolute;
-        top: 0px;
-        z-index: -1;
-        .parallax-image-container {
-            height: 100vh;
-            width: 100%;
-            position: sticky;
-            top: 0px;
-            img {
-                display: inline-block;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
         }
     }
 }

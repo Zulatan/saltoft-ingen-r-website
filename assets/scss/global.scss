@@ -12,3 +12,57 @@ body, html {
     font-weight: 400;
     font-style: normal;
   }
+
+  // for navbar
+  .nav-wrapper {
+    position: absolute;
+    width: 100%;
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 40px;
+    }
+    // nav-left
+    .nav-left {
+        background-image: url('/images/si-logo-dark.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 40px;
+        width: 40px;
+        position: relative;
+        z-index: 5;
+    }
+    .nav-right {
+        display: flex;
+        position: relative;
+        z-index: 5;
+        font-family: $futura;
+        font-weight: 300;
+        font-style: normal;
+        column-gap: 25px;
+        a {
+            text-decoration: none;
+            color: $primary-color;
+            position: relative;
+        }
+        a::before {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            bottom: 11px;
+            left: 50%;
+            background-color: $maybe;
+            transition: all .15s ease-in-out;
+        }
+        a:hover::before {
+            width: 100%;
+            left: 0;
+          }
+        .link-wrapper {
+            padding: 5px 0 5px 0;
+        }
+    }
+}

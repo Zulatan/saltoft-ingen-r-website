@@ -1,27 +1,27 @@
 <template>
   <div>
-    <h1>rdy</h1>
-    <input v-model="name" type="text">
-    <input v-model="subject" type="text">
-    <input v-model="message" type="text">
-    <input v-model="from" type="text">
-    <button v-on:click="sendEmail()">Klik på mig</button>
+    <Form/>
   </div>
+  
 </template>
 
 <script>
 export default {
-    layout: 'noheader',
     name: 'ContactPage',
     data () {
     return {
       name: '',
       message: '',
       subject: '',
-      from: ''
+      from: '',
+      show: true,
+      passwordType: 'password',
     }
   },
-methods: {
+    plugins: [
+    '../plugins/form.js'
+  ],
+  methods: {
     displayOutput(response) {
         console.log(response)
     },
@@ -36,10 +36,19 @@ methods: {
       })
       .then((response) => self.displayOutput(response))
       .catch((err) => console.log(err));
+    },
+    toggleShow() {
+      this.show = !this.show;
+    },
+    togglePasswordVisibility() {
+      this.passwordType = this.passwordType === 'password' ? 'text' : 'password';
     }
   }
 }
 </script>
 
+
+
 <style lang="scss">
+  @import './assets/scss/form.scss';
 </style>

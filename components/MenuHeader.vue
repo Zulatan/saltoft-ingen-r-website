@@ -2,11 +2,15 @@
   <section>
         <div class="nav-wrapper">
             <div class="nav-container">
-                <div class="nav-left" id="link" onclick="logoLink()"></div>
+                <div class="nav-left" id="link" @click="goToHome"></div>
                 <div class="nav-right">
-                    <div class="link-wrapper"><a href="#">Projekter</a></div>
-                    <div class="link-wrapper"><a href="#">Om os</a></div>
-                    <div class="link-wrapper"><a href="#">Kontakt</a></div>
+                    <!-- <div class="link-wrapper"><a href="#">Projekter</a></div> -->
+                    <!-- <div class="link-wrapper"><a href="#">Om os</a></div> -->
+                    <!-- <div class="link-wrapper"><a href="#">Kontakt</a></div> -->
+                    <NuxtLink  class="link-wrapper" to="/">Home</NuxtLink>
+                    <NuxtLink  class="link-wrapper" to="/contact">Projects</NuxtLink>
+                    <NuxtLink  class="link-wrapper" to="/contact">About us</NuxtLink>
+                    <NuxtLink  class="link-wrapper" to="/contact">Contact</NuxtLink>
                 </div>
             </div>
         </div>
@@ -15,10 +19,17 @@
 
 <script>
 export default {
-  name: 'MenuHeader'
+  name: 'MenuHeader',
+  methods: {
+    goToHome() {
+      this.$router.push('/')
+    }
+  }
 }
 </script>
 
 <style>
-
+    #link {
+        cursor: pointer;
+    }
 </style>

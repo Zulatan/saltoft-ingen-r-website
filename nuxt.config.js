@@ -33,7 +33,11 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/images/si-logo.svg' },
+      { rel: "stylesheet", href: "https://use.typekit.net/agr5dop.css" }, //poppins font
+      { rel: "stylesheet", href: "https://use.typekit.net/agr5dop.css" }, //futura font
+      { rel: "stylesheet", href: "https://use.typekit.net/agr5dop.css" } //new hero font
+
     ]
   },
 
@@ -41,7 +45,7 @@ export default {
   css: [
     "@/assets/scss/_variables.scss",
     "@/assets/scss/_fonts.scss",
-    "@/assets/scss/global.scss"
+    "@/assets/scss/global.scss",
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
