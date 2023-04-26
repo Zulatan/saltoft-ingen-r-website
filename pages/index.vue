@@ -2,7 +2,11 @@
   <div>
     <section>
         <div class="hero">
-            <div class="hero-background-image-container"></div>
+            <div class="hero-background-image-container">
+                <!-- <video autoplay loop muted playsinline>
+                    <source src="assets/video/si-video.mp4" type="video/mp4">
+                </video> -->
+            </div>
             <div class="hero-content-wrapper">
                 <div class="content-header-container">
                     <h1>Bygningsingeniør, bæredygtig design & teknisk rådgivning.
@@ -26,6 +30,7 @@
     <!-- offer section -->
         <HomepageProjects/>
         <Quote/>
+        <UdvalgteProjekter/>
 
   </div>
   
@@ -40,4 +45,6 @@ export default {
 <style lang="scss">
   @import './assets/scss/homepage.scss';
   @import './assets/scss/quote.scss';
+  @import './assets/scss/udvalgteprojekter.scss';
+  @import './assets/scss/footer.scss';
 </style>

@@ -21,14 +21,14 @@ body, html {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 40px 40px;
+        padding: 40px 80px;
     }
     // nav-left
     .nav-left {
-        background-image: url('/images/si-logo-dark.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+        // background-image: url('/logos/logo-big.png');
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: contain;
         height: 40px;
         width: 40px;
         position: relative;
@@ -44,7 +44,7 @@ body, html {
         column-gap: 25px;
         a {
             text-decoration: none;
-            color: $primary-color;
+            color: $secondary-color;
             position: relative;
         }
         a::before {
@@ -63,6 +63,19 @@ body, html {
           }
         .link-wrapper {
             padding: 5px 0 5px 0;
+        }
+    }
+}
+
+//media queries
+@media screen and (max-width: 550px) {
+    .nav-wrapper {
+        .nav-container { 
+            flex-direction: column;
+            align-items: center
+        }
+        .nav-right {
+            justify-content: center
         }
     }
 }

@@ -1,0 +1,29 @@
+.content-wrapper {
+    background-color: white;
+    padding: 120px 0 120px 0;
+    .header {
+        .header-container {
+            padding-left: 80px;
+            h2 {
+                font-size: 46px;
+                color: $maybe;
+                padding-bottom: 80px;
+                margin: 0;
+            }
+        }
+    }
+    
+    .projekt-container {
+        display: flex;
+        overflow: scroll;
+        .projekt-container-billede-wrapper {
+            display: flex;
+            overflow: scroll;
+            gap: 20px;
+        }
+    }
+
+    .overlay {
+        position: relative;
+    }
+}

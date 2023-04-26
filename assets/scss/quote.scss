@@ -3,7 +3,7 @@
 
 .parallax {
     position: relative;
-    height: 80vh;
+    height: 100vh;
     .parallax-text-overlay {
         height: 100%;
         position: absolute;
@@ -39,7 +39,7 @@
     }
     .parallax-image-wrapper {
         margin-top: -100vh;
-        height: 180vh;
+        height: 290vh;
         width: 100%;
         position: absolute;
         top: 0px;
@@ -56,5 +56,15 @@
                 object-fit: cover;
             }
         }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 550px) {
+    .parallax-text-container {
+        padding: 0 20px;
     }
 }

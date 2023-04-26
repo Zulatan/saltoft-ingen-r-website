@@ -1,10 +1,11 @@
 <template>
     <div>
         <MenuHeader/>
-        <!-- <FooterBlock/> -->
+        
     
         <div class="content">
             <Nuxt/>
+            <Footer/>
         </div>
     </div>
 </template>
