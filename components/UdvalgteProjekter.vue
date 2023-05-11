@@ -3,7 +3,7 @@
         <div class="content-wrapper">
             <div class="header">
                 <div class="header-container">
-                    <h2>Udvalgte Projekter</h2>
+                    <h2>Udvalgte projekter</h2>
                 </div>
             </div>
             <div class="projekt-container">

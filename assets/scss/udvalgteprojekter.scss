@@ -5,7 +5,7 @@
         .header-container {
             padding-left: 80px;
             h2 {
-                font-size: 46px;
+                font-size: 40px;
                 color: $maybe;
                 padding-bottom: 80px;
                 margin: 0;
@@ -25,5 +25,48 @@
 
     .overlay {
         position: relative;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .content-wrapper {
+        padding: 60px 0;
+        .header {
+            .header-container {
+                padding: 0 20px;
+                h2 {
+                    font-size: 30px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+
+        .projekt-container {
+            .projekt-container-billede-wrapper {
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .content-wrapper {
+        padding: 60px 0;
+        .header {
+            .header-container {
+                padding: 0 20px;
+                h2 {
+                    font-size: 30px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+
+        .projekt-container {
+            .projekt-container-billede-wrapper {
+                padding: 0 20px;
+
+            }
+        }
     }
 }

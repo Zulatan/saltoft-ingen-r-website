@@ -17,21 +17,21 @@
                     <div class="footer-right">
                         <div class="links">
                             <h3>LINKS</h3>
-                            <p>LinkedIn</p>
-                            <p>Facebook</p>
-                            <p>Kontakt os</p>
+                            <a href="">LinkedIn</a>
+                            <a href="">Facebook</a>
+                            <a href="">Kontakt os</a>
                         </div>
                         <div class="kontakt">
                             <h3>KONTAKT</h3>
-                            <p>Københavnsvejs 123, 1000 KBH V</p>
-                            <p>email@example.com</p>
-                            <p>+45 12 34 45 67</p>
+                            <a href="">Københavnsvejs 123, <br> 1000 KBH V</a>
+                            <a href="">email@example.com</a>
+                            <a href="">+45 12 34 45 67</a>
                         </div>
                         <div class="legal">
                             <h3>LEGAL</h3>
-                            <p>Terms & services</p>
-                            <p>Cookies</p>
-                            <p>CVR: 324324424</p>
+                            <a href="">Terms & services</a>
+                            <a href="">Cookies</a>
+                            <a href="">CVR: 324324424</a>
                         </div>
                     </div>
 

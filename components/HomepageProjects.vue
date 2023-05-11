@@ -1,7 +1,11 @@
 <template>
     <section>
         <div class="tilbyder-section">
+
             <div class="header-wrapper">
+                <div class="tegning-grafik">
+                    <img src="../assets/images/grafik.png" alt="">
+                </div>
                 <div class="header-container"><h2>Saltoft Ingeniør A/S</h2></div>
                 <div class="boxes-wrapper">
                     <div class="boxes-container">

@@ -17,7 +17,7 @@
                         Vi kan sørge for et stærkt samarbejde med god kommunikation og kunden taget i hånden fra start projekt til slut.</p>
                 </div>
                 <div class="content-buttons-container">
-                    <a href="">Projekter</a>
+                    <a href="">Projekter</a> 
                     <a href="kontakt.html">Kontakt</a>
                 </div>
             </div>

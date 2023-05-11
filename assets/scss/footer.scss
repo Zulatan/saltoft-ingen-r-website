@@ -3,6 +3,7 @@
 
 .footer-section {
     width: 100%;
+    height: 400px;
     background-color: white;
     position: relative;
     .footer-graphic-container {
@@ -20,7 +21,7 @@
             align-items: center;
             gap: 20px;
             .footer-left {
-                min-width: 500px;
+                min-width: 300px;
                 h3 {
                     font-size: 28px;
                     color: $maybe;
@@ -41,19 +42,108 @@
                 p {
                     font-size: 14px;
                     max-width: 350px;
+                    color: $okay;
+                }
+                input {
+                    width: 200px;
+                    height: 50px;
+                    border: 2px solid #132A4B;
+                    padding-left: 20px;
+                }
+                button {
+                    height: 50px;
+                    width: 50px;
+                    background-color: #132A4B;
+                    border-color: #132A4B;
+                    border: 0;
+                    color: white;
+                    right: 6px;
+                    position: relative;
+                }
+                input::placeholder {
+                    opacity: .3;
+                }
+                input:focus::placeholder {
+                    color: transparent;
                 }
             }
             .footer-right {
                 display: flex;
-                gap: 10px;
+                gap: 20px;
                 max-width: 450px;
                 h3 {
                     color: $maybe;
                     font-size: 16px;
                 }
-                p {
+                a {
                     font-size: 14px;
                     font-weight: 300;
+                    text-decoration: none;
+                    color: $okay;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer-section {
+        .footer-graphic-container {
+            display: none;
+        }
+        .footer-wrapper {
+            padding: 100px 80px 0 80px;
+        }
+    }
+}
+@media screen and (max-width: 820px) {
+    .footer-section {
+        .footer-graphic-container {
+            display: none;
+        }
+        .footer-wrapper {
+            padding: 0 20px;
+            .footer-container {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 30px;
+                .footer-right {
+                    gap: 0px;
+                    flex-direction: column;
+                    h3 {
+                        margin-bottom: 0;
+                    }
+                    .links {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .kontakt {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .legal {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer-section {
+        .footer-graphic-container {
+            display: none;
+        }
+        .footer-wrapper {
+            padding: 0 20px;
+            .footer-container {
+                flex-direction: column;
+                align-items: flex-start;
+                .footer-right {
+                    gap: 0px;
+                    flex-direction: column;
                 }
             }
         }
