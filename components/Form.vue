@@ -1,54 +1,50 @@
 <template>
   <div>
-    <div>
-    </div>
     <div class="form" v-if="!emailsent">
-        <div class="form-container">
-          <p>{{errormessage}}</p>
-            <div class="name-container">
-        <div class="input-wrapper">
+      <div class="form-container">
+        <p>{{errormessage}}</p>
+        <div class="name-container">
+          <div class="input-wrapper">
             <p>*Name</p>
             <div class="input-container-1">
-                <input v-model="firstName" type="text">
+              <input v-model="firstName" type="text">
             </div>
-        </div>
-        <div class="input-wrapper">
+          </div>
+          <div class="input-wrapper">
             <p>*Efternavn</p>
             <div class="input-container-1">
-                <input v-model="lastName" type="text">
+              <input v-model="lastName" type="text">
             </div>
-        </div>
-        </div>
-        <div class="input-wrapper">
-            <p>*Fra</p>
-            <div class="input-container-2">
-                <input v-model="from" type="text">
-            </div>
+          </div>
         </div>
         <div class="input-wrapper">
-            <p>Emne</p>
-            <div class="input-container-3">
-                <input v-model="subject" type="text">
-            </div>
-            
+          <p>*Fra</p>
+          <div class="input-container-2">
+            <input v-model="from" type="text">
+          </div>
         </div>
         <div class="input-wrapper">
-            <p>*Din besked</p>
-            <div class="input-container-4">
-                <textarea v-model="message">
-                    </textarea>
-            </div>
+          <p>Emne</p>
+          <div class="input-container-3">
+            <input v-model="subject" type="text">
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <p>*Din besked</p>
+          <div class="input-container-4">
+            <textarea v-model="message">
+            </textarea>
+          </div>
         </div>
         
         <div class="button-container">
-            <button v-on:click="sendEmail()">Send Message</button>
+          <button v-on:click="sendEmail()">Send Message</button>
         </div>
         <!-- <p>{{errormessage}}</p> -->
-    </div>
-       <div v-if="emailsent">Thank you for your message. We will get back to you as soon as possible!</div>
+      </div>
+      <div v-if="emailsent">Thank you for your message. We will get back to you as soon as possible!</div>
     </div>
   </div>
-  
 </template>
 
 <script>

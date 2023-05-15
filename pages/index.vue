@@ -1,6 +1,7 @@
 <template>
   <div>
     <section>
+            <BackgroundVideo/>
         <div class="hero">
             <div class="hero-background-image-container">
                 <!-- <video autoplay loop muted playsinline>
@@ -37,8 +38,12 @@
 </template>
 
 <script>
+import BackgroundVideo from '@/components/BackgroundVideo.vue';
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  components: {
+    BackgroundVideo,
+  },
 }
 </script>
 

@@ -2,21 +2,21 @@
     <section>
         <div>
             <div class="overlay" :class="{ open: isOpen && isMobile }">
-            <div class="overlay-content">
-                <!-- Your navigation links here -->
-                <NuxtLink  class="link-mobil-wrapper" to="/">Hjem</NuxtLink>
-                <NuxtLink  class="link-mobil-wrapper" to="/projekt">Projekter</NuxtLink>
-                <NuxtLink  class="link-mobil-wrapper" to="/">Om os</NuxtLink>
-                <NuxtLink  class="link-mobil-wrapper" to="/kontakt">Kontakt</NuxtLink>
-            </div>
+              <div class="overlay-content">
+                  <!-- Your navigation links here -->
+                  <NuxtLink  class="link-mobil-wrapper" to="/">Hjem</NuxtLink>
+                  <NuxtLink  class="link-mobil-wrapper" to="/projekt">Projekter</NuxtLink>
+                  <NuxtLink  class="link-mobil-wrapper" to="/">Om os</NuxtLink>
+                  <NuxtLink  class="link-mobil-wrapper" to="/kontakt">Kontakt</NuxtLink>
+              </div>
             </div>
 
             <header>
-            <div class="burger-menu" v-if="isMobile" @click="toggleNav">
-                <div class="burger-line"></div>
-                <div class="burger-line"></div>
-                <div class="burger-line"></div>
-            </div>
+              <div class="burger-menu" v-if="isMobile" @click="toggleNav">
+                  <div class="burger-line"></div>
+                  <div class="burger-line"></div>
+                  <div class="burger-line"></div>
+              </div>
             </header>
         </div>
     </section>
@@ -31,18 +31,30 @@ export default {
     };
   },
   created() {
-    this.isMobile = window.innerWidth <= 500;
-    window.addEventListener('resize', this.handleResize);
+    if (process.client) { //code needed for when ssr is set to true. code inside if is only executed on client-side
+      this.isMobile = window.innerWidth <= 500; //variable that tells that isMobile is 500px or below
+      window.addEventListener('resize', this.handleResize);
+    }
   },
-  destroyed() {
+  mounted() { //function called after an element is added to the DOM. used to determine wether the burger menu should be shown
+    if (process.client) { //code needed for when ssr is set to true. code inside if is only executed on client-side
+      this.isMobile = window.innerWidth <= 500;
+      window.addEventListener('resize', this.handleResize);
+      this.$router.afterEach(this.closeNav);
+    }
+  },
+  destroyed() { //called when an element is removed from the DOM. used to remove the burger nav when above the resize pixel input
     window.removeEventListener('resize', this.handleResize);
   },
-  methods: {
+  methods: { //functions
     handleResize() {
-      this.isMobile = window.innerWidth <= 500;
+      this.isMobile = window.innerWidth <= 500; //checks if the windows is 500px or below, if it is, show burger nav
     },
     toggleNav() {
-      this.isOpen = !this.isOpen;
+      this.isOpen = !this.isOpen; //opens the burgernav on click
+    },
+    closeNav() { //closes nav whenever a link is clicked
+      this.isOpen = false;
     }
   }
 };

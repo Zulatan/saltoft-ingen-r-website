@@ -34,7 +34,6 @@
                             <a href="">CVR: 324324424</a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
