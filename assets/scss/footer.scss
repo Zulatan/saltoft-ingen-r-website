@@ -23,6 +23,7 @@
             .footer-left {
                 min-width: 300px;
                 h3 {
+                    font-family: $futura;
                     font-size: 28px;
                     color: $maybe;
                     margin: 0;
@@ -74,6 +75,8 @@
                 h3 {
                     color: $maybe;
                     font-size: 16px;
+                    font-family: $futura;
+                    padding-bottom: 5px;
                 }
                 a {
                     font-size: 14px;

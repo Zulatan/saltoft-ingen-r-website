@@ -12,7 +12,7 @@
                         <h3>Bliv ringet op</h3>
                         <p>..og få et uforpligtende opkald omkring dit projekt, så vi sammen kan realisere jeres ønske.</p>
                         <input type="text" placeholder="+45 12 34 56 78">
-                        <button>--></button>
+                        <button>→</button>
                     </div>
                     <div class="footer-right">
                         <div class="links">
