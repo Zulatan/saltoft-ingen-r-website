@@ -3,7 +3,7 @@
     <div class="nav-wrapper">
       <div class="nav-container">
         <div class="nav-left" id="link" @click="goToHome">
-          <img src="../assets/logos/logo.svg" alt="">
+          <img src="../assets/logos/logo_dark.svg" alt="image of the company logo">
         </div>
         <div class="nav-right">
           <NuxtLink  class="link-wrapper" to="/">Hjem</NuxtLink>

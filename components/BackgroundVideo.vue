@@ -9,7 +9,7 @@
 export default {
   computed: {
     videoPath() {
-      return require('../assets/video/si-video.mp4');
+      return require('../assets/video/bgvid.mp4');
     },
   },
 };

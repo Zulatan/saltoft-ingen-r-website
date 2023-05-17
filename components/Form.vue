@@ -2,23 +2,24 @@
   <div>
     <div class="form" v-if="!emailsent">
       <div class="form-container">
+        <h1>Kontakt mig herunder!</h1>
         <p>{{errormessage}}</p>
         <div class="name-container">
           <div class="input-wrapper">
-            <p>*Name</p>
+            <p>* Name</p>
             <div class="input-container-1">
               <input v-model="firstName" type="text">
             </div>
           </div>
           <div class="input-wrapper">
-            <p>*Efternavn</p>
+            <p>* Efternavn</p>
             <div class="input-container-1">
               <input v-model="lastName" type="text">
             </div>
           </div>
         </div>
         <div class="input-wrapper">
-          <p>*Fra</p>
+          <p>* E-mail</p>
           <div class="input-container-2">
             <input v-model="from" type="text">
           </div>
@@ -30,7 +31,7 @@
           </div>
         </div>
         <div class="input-wrapper">
-          <p>*Din besked</p>
+          <p>* Din besked</p>
           <div class="input-container-4">
             <textarea v-model="message">
             </textarea>
@@ -38,12 +39,14 @@
         </div>
         
         <div class="button-container">
-          <button v-on:click="sendEmail()">Send Message</button>
+          <button v-on:click="sendEmail()">Send besked</button>
         </div>
         <!-- <p>{{errormessage}}</p> -->
       </div>
       <div v-if="emailsent">Thank you for your message. We will get back to you as soon as possible!</div>
     </div>
+    <div class="kontakt-bg"><img src="../assets/images/kontakt-bg.png" alt=""></div>
+    <div class="bg-overlay"></div>
   </div>
 </template>
 
@@ -83,7 +86,7 @@ export default {
         if(this.firstName == ''){
             return 'Navn skal udfyldes.';
         }
-        if(this.lastName == ''){
+        if(this.lastName == '') {
             return 'Efternavn skal udfyldes.';
         }
         if(this.from == ''){

@@ -20,7 +20,7 @@
             position: relative;
             display: flex;
             gap: 15px;
-            padding-bottom: 10px;
+            padding-bottom: 10px; /*så scrollbar er under billederne og ikke scroller på selve billedet*/
             a {
                 position: relative;
                 display: inline-block;
@@ -40,7 +40,7 @@
                     opacity: 0;
                     transition: opacity .2s ease;
                     pointer-events: none;
-                    // text inside hover
+                    /*text inside hover*/
                     color: $secondary-color;
                     font-size: 18px;
                     display: flex;

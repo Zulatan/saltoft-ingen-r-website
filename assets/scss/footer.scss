@@ -3,9 +3,10 @@
 
 .footer-section {
     width: 100%;
-    height: 400px;
+    height: auto;
     background-color: white;
     position: relative;
+    padding: 0 0 40px 0; /*så paralax ikke går under footeren - ser skørt ud*/
     .footer-graphic-container {
         position: absolute;
         z-index: 2;

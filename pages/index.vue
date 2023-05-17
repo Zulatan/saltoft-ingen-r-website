@@ -1,7 +1,7 @@
 <template>
   <div>
     <section>
-            <BackgroundVideo/>
+            <!-- <BackgroundVideo/> -->
         <div class="hero">
             <div class="hero-background-image-container">
                 <!-- <video autoplay loop muted playsinline>
@@ -29,7 +29,7 @@
     </section>
 
     <!-- offer section -->
-        <HomepageProjects/>
+        <InfoBoxes/>
         <Quote/>
         <UdvalgteProjekter/>
 

@@ -4,10 +4,10 @@
             <div class="overlay" :class="{ open: isOpen && isMobile }">
               <div class="overlay-content">
                   <!-- Your navigation links here -->
-                  <NuxtLink  class="link-mobil-wrapper" to="/">Hjem</NuxtLink>
-                  <NuxtLink  class="link-mobil-wrapper" to="/projekt">Projekter</NuxtLink>
-                  <NuxtLink  class="link-mobil-wrapper" to="/">Om os</NuxtLink>
-                  <NuxtLink  class="link-mobil-wrapper" to="/kontakt">Kontakt</NuxtLink>
+                  <NuxtLink  class="link-mobil-wrapper" to="/" :class="{ active: isLinkActive('/') }">Hjem</NuxtLink>
+                  <NuxtLink  class="link-mobil-wrapper" to="/projekt" :class="{ active: isLinkActive('/projekt') }">Projekter</NuxtLink>
+                  <NuxtLink  class="link-mobil-wrapper" to="/omos" :class="{ active: isLinkActive('/omos') }">Om os</NuxtLink>
+                  <NuxtLink  class="link-mobil-wrapper" to="/kontakt" :class="{ active: isLinkActive('/kontakt') }">Kontakt</NuxtLink>
               </div>
             </div>
 
@@ -55,7 +55,10 @@ export default {
     },
     closeNav() { //closes nav whenever a link is clicked
       this.isOpen = false;
-    }
+    },
+    isLinkActive(route) {
+      return this.$route.path === route;
+    },
   }
 };
 </script>

@@ -114,13 +114,14 @@
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: white;
+    .tegning-grafik {
+        position: absolute;
+        margin-top: -310px;
+        margin-left: -130px;
+        z-index: 0;
+    }
     .header-wrapper {
-        .tegning-grafik {
-            position: absolute;
-            margin-top: -310px;
-            margin-left: -130px;
-            z-index: -1;
-        }
+        position: relative;
         .header-container {
             display: flex;
             justify-content: center;
@@ -132,9 +133,6 @@
             }
         }
     }
-
-
-
     .boxes-wrapper {
         padding: 0 80px 100px 80px;
         max-width: 1400px;
@@ -152,7 +150,8 @@
             max-width: 400px;
             min-width: 350px;
             height: auto;
-            box-shadow: 2px 2px 3px #cecece;
+            // box-shadow: 2px 2px 2.6px #cecece;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
             display: flex;
             justify-content: center;
             padding: 50px 30px 50px 30px;
@@ -161,8 +160,9 @@
             // align-items: center;
             flex-direction: column;
             row-gap: 20px;
-            border: solid 0.5px #cecccc;
-            border-radius: 5px;
+            // border: solid 0.5px #cecccc;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
             font-family: $poppins;
             font-weight: 300;
             line-height: 24px;

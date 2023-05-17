@@ -1,149 +1,233 @@
 @import '~@/assets/scss/variables';
 @import '~@/assets/scss/fonts';
 .form-container {
-    background-color: $box-color;
-    .form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        top: 200px;
-        width: 500px;
-        margin-right: auto;
-        margin-left: 60px;
-        background-color: $box-color;
-        box-shadow: 0px 0px 50px lightgrey;
-        .form-container {
-            p {
-                font-size: 10px;
-                color: red;
-                margin: 10px 0 0 0;
-            }
-        }
-        input {
-            width: 100%;
-            height: 40px;
-            padding: 0 20px 0 10px;
-            border: solid 1px lightgrey;
-            border-radius: 4px;
-            &:focus::placeholder {
-                color: transparent;
-            }
-        }
-        .input-wrapper {
-            padding: 10px 0 0 0;
-            p {
-                margin: 0 0 5px 0;
-                color: black;
-                font-size: 12px;
-            }
-        }
-        .name-container {
-            display: flex;
-            column-gap: 20px;
-        }
+  position: relative;
+.form {
+  height: 100vh;
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    color: $box-color;
+    padding-top: 10px;
+    .input-wrapper {
+        margin-bottom: 20px;
         .input-container-1 {
+            display: flex;
+          }
+          .input-container-2,
+          .input-container-3,
+          .input-container-4 {
             position: relative;
-            width: 150px;
-            // &::before {
-            //     content: "";
-            //     display: block;
-            //     position: absolute;
-            //     width: 20px;
-            //     height: 20px;
-            //     top: 9px;
-            //     left: 12px;
-            //     background-image: url(/icons/user.svg);
-            //     background-position: center;
-            //     background-repeat: no-repeat;
-            //     background-size: contain;
-            // }
-        }
-        p {
-            color: $primary-color;
-        }
-        .input-container-2 {
-            position: relative;
-            width: 400px;
-            // &::before {
-            //     content: "";
-            //     display: block;
-            //     position: absolute;
-            //     width: 20px;
-            //     height: 20px;
-            //     top: 10px;
-            //     left: 12px;
-            //     background-image: url(/icons/at-sign.svg);
-            //     background-position: center;
-            //     background-repeat: no-repeat;
-            //     background-size: contain;
-            // }   
-        }
-        .input-container-3 {
-            position: relative;
-            width: 400px;
-            // &::before {
-            //     content: "";
-            //     display: block;
-            //     position: absolute;
-            //     width: 20px;
-            //     height: 20px;
-            //     top: 9px;
-            //     left: 12px;
-            //     background-image: url(/icons/type.svg);
-            //     background-position: center;
-            //     background-repeat: no-repeat;
-            //     background-size: contain;
-            // }
-        }
-        .input-container-4 {
-            position: relative;
-            width: 400px;
-            // &::before {
-            //     content: "";
-            //     display: block;
-            //     position: absolute;
-            //     width: 20px;
-            //     height: 20px;
-            //     top: 9px;
-            //     left: 12px;
-            //     background-image: url(/icons/message-circle.svg);
-            //     background-position: center;
-            //     background-repeat: no-repeat;
-            //     background-size: contain;
-            // }
-        }
-        .input {
-            width: 100%;
-            height: 40px;
-            padding: 0 20px 0 42px;
-            border-bottom: solid 1px lightgrey;
-            border-radius: 10px;
-            background-color: transparent;
-            &:focus::placeholder {
-                color: transparent;
-            }
-        }
-        textarea {
-            width: 400px;
-            height: 150px;
-            border-color: lightgrey;
-        }
-        button {
-            background-color: $maybe;
-            border: 1px solid $maybe;
-            color: $secondary-color;
-            border-radius: 3px;
-            padding: 10px 35px;
-            margin-top: 40px;
-            width: 100%;
-            box-shadow: 0px 0px 25px #2C3E50;
-            cursor: pointer;
-        }
-        button:hover {
-            opacity: 80%;
-        }
-        
-    }
+          }
+      }
+      button {
+        padding: 10px 20px;
+        background-color: $box-color;
+        color: $primary-color;
+        border: none;
+        border-radius: 4px;
+        width: 100%;
+        cursor: pointer;
+      }
+      p {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 300;
+      }
+  }
 }
+}
+    
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    // border-color: transparent;
+    color: $secondary-color;
+    &:focus {
+      color: $secondary-color;
+    }
+  }
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid $secondary-color;
+    background-color: transparent;
+  }
+  
+
+  .kontakt-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: black;
+  }
+
+  .kontakt-bg img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5; /* Adjust the opacity as desired */
+  }
+
+  .bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the background color and opacity as desired */
+    z-index: -1;
+  }
+
+// .form-container {
+//     background-color: $primary-color;
+//     .form {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         position: relative;
+//         top: 200px;
+//         width: 500px;
+//         margin-right: auto;
+//         margin-left: 60px;
+//         background-color: $box-color;
+//         box-shadow: 0px 0px 50px lightgrey;
+//         .form-container {
+//             p {
+//                 font-size: 10px;
+//                 color: red;
+//                 margin: 10px 0 0 0;
+//             }
+//         }
+//         input {
+//             width: 100%;
+//             height: 40px;
+//             padding: 0 20px 0 10px;
+//             border: solid 1px lightgrey;
+//             border-radius: 4px;
+//             &:focus::placeholder {
+//                 color: transparent;
+//             }
+//         }
+//         .input-wrapper {
+//             padding: 10px 0 0 0;
+//             p {
+//                 margin: 0 0 5px 0;
+//                 color: black;
+//                 font-size: 12px;
+//             }
+//         }
+//         .name-container {
+//             display: flex;
+//             column-gap: 20px;
+//         }
+//         .input-container-1 {
+//             position: relative;
+//             width: 150px;
+//             // &::before {
+//             //     content: "";
+//             //     display: block;
+//             //     position: absolute;
+//             //     width: 20px;
+//             //     height: 20px;
+//             //     top: 9px;
+//             //     left: 12px;
+//             //     background-image: url(/icons/user.svg);
+//             //     background-position: center;
+//             //     background-repeat: no-repeat;
+//             //     background-size: contain;
+//             // }
+//         }
+//         p {
+//             color: $primary-color;
+//         }
+//         .input-container-2 {
+//             position: relative;
+//             width: 400px;
+//             // &::before {
+//             //     content: "";
+//             //     display: block;
+//             //     position: absolute;
+//             //     width: 20px;
+//             //     height: 20px;
+//             //     top: 10px;
+//             //     left: 12px;
+//             //     background-image: url(/icons/at-sign.svg);
+//             //     background-position: center;
+//             //     background-repeat: no-repeat;
+//             //     background-size: contain;
+//             // }   
+//         }
+//         .input-container-3 {
+//             position: relative;
+//             width: 400px;
+//             // &::before {
+//             //     content: "";
+//             //     display: block;
+//             //     position: absolute;
+//             //     width: 20px;
+//             //     height: 20px;
+//             //     top: 9px;
+//             //     left: 12px;
+//             //     background-image: url(/icons/type.svg);
+//             //     background-position: center;
+//             //     background-repeat: no-repeat;
+//             //     background-size: contain;
+//             // }
+//         }
+//         .input-container-4 {
+//             position: relative;
+//             width: 400px;
+//             // &::before {
+//             //     content: "";
+//             //     display: block;
+//             //     position: absolute;
+//             //     width: 20px;
+//             //     height: 20px;
+//             //     top: 9px;
+//             //     left: 12px;
+//             //     background-image: url(/icons/message-circle.svg);
+//             //     background-position: center;
+//             //     background-repeat: no-repeat;
+//             //     background-size: contain;
+//             // }
+//         }
+//         .input {
+//             width: 100%;
+//             height: 40px;
+//             padding: 0 20px 0 42px;
+//             border-bottom: solid 1px lightgrey;
+//             border-radius: 10px;
+//             background-color: transparent;
+//             &:focus::placeholder {
+//                 color: transparent;
+//             }
+//         }
+//         textarea {
+//             width: 400px;
+//             height: 150px;
+//             border-color: lightgrey;
+//         }
+//         button {
+//             background-color: $maybe;
+//             border: 1px solid $maybe;
+//             color: $secondary-color;
+//             border-radius: 3px;
+//             padding: 10px 35px;
+//             margin-top: 40px;
+//             width: 100%;
+//             box-shadow: 0px 0px 25px #2C3E50;
+//             cursor: pointer;
+//         }
+//         button:hover {
+//             opacity: 80%;
+//         }
+        
+//     }
+// }
 
