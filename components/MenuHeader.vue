@@ -8,7 +8,7 @@
         <div class="nav-right">
           <NuxtLink  class="link-wrapper" to="/">Hjem</NuxtLink>
           <NuxtLink  class="link-wrapper" to="/projekt">Projekter</NuxtLink>
-          <NuxtLink  class="link-wrapper" to="/">Om os</NuxtLink>
+          <NuxtLink  class="link-wrapper" to="/omos">Om os</NuxtLink>
           <NuxtLink  class="link-wrapper" to="/kontakt">Kontakt</NuxtLink>
         </div>
       </div>

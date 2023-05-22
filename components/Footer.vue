@@ -10,7 +10,7 @@
                 <div class="footer-container">
                     <div class="footer-left">
                         <h3>Bliv ringet op</h3>
-                        <p>..og få et uforpligtende opkald omkring dit projekt, så vi sammen kan realisere jeres ønske.</p>
+                        <p>..og få et uforpligtende opkald omkring dit projekt, så vi sammen kan realisere dit ønske.</p>
                         <input type="text" placeholder="+45 12 34 56 78">
                         <button>→</button>
                     </div>
@@ -23,7 +23,7 @@
                         </div>
                         <div class="kontakt">
                             <h3>KONTAKT</h3>
-                            <a href="">Københavnsvejs 123, <br> 1000 KBH V</a>
+                            <a href="">Anker Engelunds Vej 1 Bygning 101A, 2800 Kgs. Lyngby</a>
                             <a href="">email@example.com</a>
                             <a href="">+45 12 34 45 67</a>
                         </div>
