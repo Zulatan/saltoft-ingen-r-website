@@ -9,7 +9,8 @@ export default {
           indentedSyntax: true // For using Sass indent syntax instead of SCSS
         }
       }
-    }
+    },
+    dir: 'dist' //out directory for when i run npm run build
   },
   server: {
     port: 4500
