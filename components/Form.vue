@@ -6,8 +6,8 @@
           <h2>Saltoft Ingeniør A/S</h2>
           <div class="line"></div>
           <p>Anker Engelunds Vej 1 Bygning 101A, <br> 2800 Kgs. Lyngby</p>
-          <a href="">kontakt@si.dk</a>
-          <a href="">+45 40 47 46 50</a>
+          <a href="mailto:kontakt@si.dk" target="_blank">kontakt@si.dk</a>
+          <a href="tel:+4540474650">+45 40 47 46 50</a>
         </div>
 
       <div class="form-container">

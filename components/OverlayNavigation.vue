@@ -62,3 +62,13 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+
+@media screen and (max-width: 375px) {
+ .burger-menu {
+  left: 20px;
+ }
+}
+
+</style>

@@ -2,69 +2,81 @@
 @import '~@/assets/scss/fonts';
 .form-container {
   position: relative;
-.form {
-  padding: 0 80px;
-  display: flex;
-  justify-content: space-between;
-  .left-container {
-    max-width: 400px;
-    padding: 40px 0;
-    h2 {
-      margin: 0;
-      color: $secondary-color;
-      font-size: 32px;
-      font-weight: 700;
-    }
-    p {
-      color: $secondary-color;
-      font-size: 12px;
-    }
-    a {
-      text-decoration: none;
-      color: $secondary-color;
-      font-size: 12px;
-    }
-    .line {
-      width: 40%;
-      height: 2px;
-      margin: 20px 0;
-      background-color: $secondary-color;
-    }
-  }
-  .form-container {
-    max-width: 400px;
-    color: $box-color;
-    padding: 40px 0;
-    .input-wrapper {
-        margin-bottom: 20px;
-        .input-container-1 {
-            display: flex;
-          }
-          .input-container-2,
-          .input-container-3,
-          .input-container-4 {
-            position: relative;
-          }
-      }
-      button {
-        padding: 10px 20px;
-        background-color: $box-color;
-        color: $primary-color;
-        border: none;
-        border-radius: 4px;
-        width: 100%;
-        cursor: pointer;
+  .form {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: auto;
+    .left-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      padding: 40px 0;
+      h2 {
+        margin: 0;
+        color: $secondary-color;
+        font-size: 32px;
+        font-weight: 700;
       }
       p {
-        margin: 0;
+        color: $secondary-color;
         font-size: 12px;
-        font-weight: 300;
       }
-      h1 {
-        margin: 0;
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+        // font-weight: 700;
+        font-size: 12px;
+        padding: 10px 0;
+        text-decoration: underline;
+      }
+      .line {
+        width: 40%;
+        height: 2px;
+        margin: 20px 0;
+        background-color: $secondary-color;
       }
     }
-  }   
+    .form-container {
+      max-width: 400px;
+      color: $box-color;
+      padding: 40px 0;
+      .input-wrapper {
+          margin-bottom: 20px;
+          .input-container-1 {
+              display: flex;
+            }
+            .input-container-2,
+            .input-container-3,
+            .input-container-4 {
+              position: relative;
+            }
+        }
+        button {
+          padding: 10px 20px;
+          background-color: $box-color;
+          color: $primary-color;
+          border: none;
+          border-radius: 4px;
+          width: 100%;
+          cursor: pointer;
+          transition: transform 0.3s;
+          &:hover {
+            transform: scale(1.03);
+            opacity: .95;
+          }
+        }
+        p {
+          margin: 0;
+          font-size: 12px;
+          font-weight: 300;
+        }
+        h1 {
+          margin: 0;
+        }
+      }
+    }   
 }
     
   input {
@@ -107,7 +119,8 @@
   .kontakt-bg img {
     width: 100%;
     height: 100%;
-    opacity: 0.5; /* Adjust the opacity as desired */
+    opacity: 0.5;
+    object-fit: cover;
   }
 
   .bg-overlay {
@@ -116,154 +129,33 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Adjust the background color and opacity as desired */
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: -1;
   }
 
-// .form-container {
-//     background-color: $primary-color;
-//     .form {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         position: relative;
-//         top: 200px;
-//         width: 500px;
-//         margin-right: auto;
-//         margin-left: 60px;
-//         background-color: $box-color;
-//         box-shadow: 0px 0px 50px lightgrey;
-//         .form-container {
-//             p {
-//                 font-size: 10px;
-//                 color: red;
-//                 margin: 10px 0 0 0;
-//             }
-//         }
-//         input {
-//             width: 100%;
-//             height: 40px;
-//             padding: 0 20px 0 10px;
-//             border: solid 1px lightgrey;
-//             border-radius: 4px;
-//             &:focus::placeholder {
-//                 color: transparent;
-//             }
-//         }
-//         .input-wrapper {
-//             padding: 10px 0 0 0;
-//             p {
-//                 margin: 0 0 5px 0;
-//                 color: black;
-//                 font-size: 12px;
-//             }
-//         }
-//         .name-container {
-//             display: flex;
-//             column-gap: 20px;
-//         }
-//         .input-container-1 {
-//             position: relative;
-//             width: 150px;
-//             // &::before {
-//             //     content: "";
-//             //     display: block;
-//             //     position: absolute;
-//             //     width: 20px;
-//             //     height: 20px;
-//             //     top: 9px;
-//             //     left: 12px;
-//             //     background-image: url(/icons/user.svg);
-//             //     background-position: center;
-//             //     background-repeat: no-repeat;
-//             //     background-size: contain;
-//             // }
-//         }
-//         p {
-//             color: $primary-color;
-//         }
-//         .input-container-2 {
-//             position: relative;
-//             width: 400px;
-//             // &::before {
-//             //     content: "";
-//             //     display: block;
-//             //     position: absolute;
-//             //     width: 20px;
-//             //     height: 20px;
-//             //     top: 10px;
-//             //     left: 12px;
-//             //     background-image: url(/icons/at-sign.svg);
-//             //     background-position: center;
-//             //     background-repeat: no-repeat;
-//             //     background-size: contain;
-//             // }   
-//         }
-//         .input-container-3 {
-//             position: relative;
-//             width: 400px;
-//             // &::before {
-//             //     content: "";
-//             //     display: block;
-//             //     position: absolute;
-//             //     width: 20px;
-//             //     height: 20px;
-//             //     top: 9px;
-//             //     left: 12px;
-//             //     background-image: url(/icons/type.svg);
-//             //     background-position: center;
-//             //     background-repeat: no-repeat;
-//             //     background-size: contain;
-//             // }
-//         }
-//         .input-container-4 {
-//             position: relative;
-//             width: 400px;
-//             // &::before {
-//             //     content: "";
-//             //     display: block;
-//             //     position: absolute;
-//             //     width: 20px;
-//             //     height: 20px;
-//             //     top: 9px;
-//             //     left: 12px;
-//             //     background-image: url(/icons/message-circle.svg);
-//             //     background-position: center;
-//             //     background-repeat: no-repeat;
-//             //     background-size: contain;
-//             // }
-//         }
-//         .input {
-//             width: 100%;
-//             height: 40px;
-//             padding: 0 20px 0 42px;
-//             border-bottom: solid 1px lightgrey;
-//             border-radius: 10px;
-//             background-color: transparent;
-//             &:focus::placeholder {
-//                 color: transparent;
-//             }
-//         }
-//         textarea {
-//             width: 400px;
-//             height: 150px;
-//             border-color: lightgrey;
-//         }
-//         button {
-//             background-color: $maybe;
-//             border: 1px solid $maybe;
-//             color: $secondary-color;
-//             border-radius: 3px;
-//             padding: 10px 35px;
-//             margin-top: 40px;
-//             width: 100%;
-//             box-shadow: 0px 0px 25px #2C3E50;
-//             cursor: pointer;
-//         }
-//         button:hover {
-//             opacity: 80%;
-//         }
-        
-//     }
-// }
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    .form {
+      flex-direction: column;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+  }  
+}
+
+@media screen and (max-width: 375px) {
+  .form-container {
+    .form {
+      flex-direction: column;
+      padding: 20px 20px;
+      justify-content: center;
+      .left-container {
+        h2 {
+          padding-top: 40px;
+        }
+      }
+    }
+  }  
+}
 

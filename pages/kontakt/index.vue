@@ -3,11 +3,15 @@
     <div class="form-container">
       <Form/>
     </div>
+    <div class="map-container">
+      <GoogleMap/>
+    </div>
   </div>
   
 </template>
 
 <script>
+
 export default {
     name: 'ContactPage',
     data () {
@@ -39,12 +43,12 @@ export default {
       .then((response) => self.displayOutput(response))
       .catch((err) => console.log(err));
     },
-    toggleShow() {
-      this.show = !this.show;
-    },
-    togglePasswordVisibility() {
-      this.passwordType = this.passwordType === 'password' ? 'text' : 'password';
-    }
+    // toggleShow() {
+    //   this.show = !this.show;
+    // },
+    // togglePasswordVisibility() {
+    //   this.passwordType = this.passwordType === 'password' ? 'text' : 'password';
+    // }
   }
 }
 </script>

@@ -3,20 +3,22 @@
 
 .footer-section {
     width: 100%;
+    max-width: 1600px;
     height: auto;
     background-color: white;
     position: relative;
-    padding: 0 0 40px 0; /*så paralax ikke går under footeren - ser skørt ud*/
+    padding: 0 40px 40px 40px; /*so that parralax looks decent*/
+    margin: auto;
     .footer-graphic-container {
         position: absolute;
         z-index: 2;
         right: 0;
-        // padding: 0 80px 0 0;
+        padding-right: 40px;
     }
     .footer-wrapper {
         position: relative;
         z-index: 2;
-        padding: 100px 0 0 80px;
+        padding: 100px 0;
         .footer-container {
             display: flex;
             align-items: center;
@@ -26,7 +28,7 @@
                 h3 {
                     font-family: $futura;
                     font-size: 28px;
-                    color: $primary-color;
+                    color: $maybe;
                     margin: 0;
                     &::after {
                         content: "";
@@ -34,7 +36,7 @@
                         position: absolute;
                         width: 30px;
                         height: 30px;
-                        margin: 10px 0 0 10px;
+                        margin: 0 0 0 10px;
                         background-image: url('assets/icons/phone.svg');
                         background-position: center;
                         background-repeat: no-repeat;
@@ -65,14 +67,15 @@
                 input::placeholder {
                     opacity: .3;
                 }
-                // input:focus::placeholder {
-                //     color: transparent;
-                // }
             }
             .footer-right {
                 display: flex;
                 gap: 20px;
                 max-width: 450px;
+                .links {
+                    display: flex;
+                    flex-direction: column;
+                }
                 .kontakt {
                     display: flex;
                     flex-direction: column;
@@ -88,34 +91,27 @@
                     font-weight: 300;
                     text-decoration: none;
                     color: $okay;
+                    padding: 5px 0;
+                    line-height: 20px;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
     .footer-section {
+        padding: 0 20px;
         .footer-graphic-container {
             display: none;
         }
         .footer-wrapper {
-            padding: 100px 80px 0 80px;
-        }
-    }
-}
-@media screen and (max-width: 820px) {
-    .footer-section {
-        .footer-graphic-container {
-            display: none;
-        }
-        .footer-wrapper {
-            padding: 0 20px;
+            padding: 0 0;
             .footer-container {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 30px;
-                padding: 40px 0;
+                padding: 20px 0;
                 .footer-right {
                     gap: 0px;
                     flex-direction: column;
@@ -146,7 +142,6 @@
             display: none;
         }
         .footer-wrapper {
-            padding: 0 20px;
             .footer-container {
                 flex-direction: column;
                 align-items: flex-start;

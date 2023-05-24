@@ -93,6 +93,7 @@
         img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
         .hero-overlay {
             position: absolute;
@@ -130,8 +131,11 @@
 .tilbyder-section {
     display: flex;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 50px 80px;
     background-color: white;
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
     .tegning-grafik {
         position: absolute;
         margin-top: -310px;
@@ -143,24 +147,21 @@
         .header-container {
             display: flex;
             justify-content: center;
-            padding: 20px 0;
+            padding: 20px 0 60px 0;
             h2 {
                 color: $primary-color;
                 font-size: 46px;
                 line-height: 56px;
+                margin: 0;
             }
         }
     }
     .boxes-wrapper {
-        padding: 0 80px 100px 80px;
-        max-width: 1400px;
-        margin-left: auto;
-        margin-right: auto;
         .boxes-container {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
             position: relative;
-            column-gap: 20px;
+            column-gap: 10px;
         }
 
         .box-content {
@@ -168,17 +169,13 @@
             max-width: 400px;
             min-width: 350px;
             height: auto;
-            // box-shadow: 2px 2px 2.6px #cecece;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
             display: flex;
             justify-content: center;
             padding: 50px 30px 50px 30px;
-            // text-align: center;
             position: relative;
-            // align-items: center;
             flex-direction: column;
             row-gap: 20px;
-            // border: solid 0.5px #cecccc;
             border-top-right-radius: 15px;
             border-bottom-left-radius: 15px;
             font-family: $poppins;
@@ -225,6 +222,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 60px;
         h3 {
             margin: 0;
             color: $primary-color;
@@ -273,8 +271,13 @@
 }
 
 @media screen and (max-width: 768px) {
+    .tilbyder-section {
+        .tegning-grafik {
+            display: none;
+        }
+    }
     .hero-content-wrapper {
-        padding: 0 40px;
+        padding: 0 20px;
         .content-header-container {
             h1 {
                 font-size: 24px;
@@ -283,3 +286,38 @@
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .tilbyder-section {
+        padding: 30px 0;
+        .boxes-wrapper {
+            padding: 0;
+            .boxes-container {
+                .box-content {
+                    border-top-right-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                }
+            }
+        }
+        .header-wrapper {
+            .header-container {
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+        .tegning-grafik {
+            display: none;
+        }
+        .ring-container {
+            padding: 60px 20px 0 20px;
+            h3 {
+                font-size: 18px;
+                text-align: center;
+            }
+            p {
+                font-size: 36px;
+            }
+        }
+    }
+}   

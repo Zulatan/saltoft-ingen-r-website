@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section>
+    <section style="background-color: white;">
             <!-- <BackgroundVideo/> -->
         <div class="hero">
             <div class="hero-background-image-container">
@@ -18,13 +18,12 @@
                 </div> -->
                 <div class="content-buttons-container">
                     <a href="">Projekter</a> 
-                    <a href="kontakt.html">Kontakt</a>
+                    <a href="kontakt">Kontakt</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- offer section -->
         <InfoBoxes/>
         <Quote/>
         <UdvalgteProjekter/>
@@ -45,7 +44,7 @@ export default {
 
 <style lang="scss">
   @import './assets/scss/homepage.scss';
-  @import './assets/scss/quote.scss';
-  @import './assets/scss/udvalgteprojekter.scss';
+  @import './assets/scss/homepagequote.scss';
+  @import './assets/scss/homepageudvalgteprojekter.scss';
   @import './assets/scss/footer.scss';
 </style>

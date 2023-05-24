@@ -1,0 +1,12 @@
+@import '~@/assets/scss/variables';
+@import '~@/assets/scss/fonts';
+
+.projekter-image-wrapper {
+    padding: 0 20px;
+    .projekter-image-container {
+        img {
+            width: 100%;
+        }
+    }
+}
+

@@ -1,0 +1,69 @@
+@import 'variables';
+@import 'fonts';
+
+.omos-quote-wrapper {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    .omos-quote-container {
+        position: relative;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .omos-quote-text-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 2;
+        h1 {
+            color: $secondary-color;
+            font-family: $newhero;
+            font-size: 34px;
+        }
+        p {
+            color: $secondary-color;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}
+.omos-quote-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .omos-quote-wrapper {
+        .omos-quote-text-container {
+            .omos-text-wrapper {
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .omos-quote-wrapper {
+        .omos-quote-text-container {
+            .omos-text-wrapper {
+                padding: 0 20px;
+            }
+        }
+    }
+}

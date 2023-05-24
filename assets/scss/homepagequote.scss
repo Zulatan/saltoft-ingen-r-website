@@ -23,6 +23,7 @@
         height: 100%;
         position: relative;
         z-index: 2;
+        padding: 0 40px;
         p {
             font-size: 36px;
             font-style: italic;
@@ -66,5 +67,19 @@
 @media screen and (max-width: 550px) {
     .parallax-text-container {
         padding: 0 20px;
+        p {
+            font-size: 24px;
+        }
     }
+}
+
+@media screen and (max-width: 375px) {
+    .parallax {
+        .parallax-text-container {
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+
 }

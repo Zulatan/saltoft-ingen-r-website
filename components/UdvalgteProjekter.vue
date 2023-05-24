@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="background-color: white;">
         <div class="content-wrapper">
             <div class="header">
                 <div class="header-container">
