@@ -34,9 +34,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/images/si-logo.svg' },
-      { rel: "stylesheet", href: "https://use.typekit.net/agr5dop.css" }, //poppins font
-      { rel: "stylesheet", href: "https://use.typekit.net/agr5dop.css" }, //futura font
-      { rel: "stylesheet", href: "https://use.typekit.net/agr5dop.css" } //new hero font
+      { rel: "stylesheet", href: "https://use.typekit.net/agr5dop.css" }, //poppins, futura, new hero font
 
     ]
   },
@@ -75,7 +73,7 @@ export default {
     baseURL: '/',
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  // // Build Configuration: https://go.nuxtjs.dev/config-build
+  // build: {
+  // }
 }
