@@ -8,7 +8,7 @@
     ],
     "routes": [
       {
-        "src": "/(.nuxt.config.js)",
+        "src": "/(nuxt.config.js)",
         "dest": "/index.html"
       }
     ]
