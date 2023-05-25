@@ -24,6 +24,7 @@
 
 <script>
 export default {
+  name: 'OverlayNavigation',
   data() {
     return {
       isOpen: false,

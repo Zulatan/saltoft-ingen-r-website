@@ -62,6 +62,7 @@
 
 <script>
 export default {
+  name: 'Form',
   data(){
     return {
         firstName: '',
@@ -105,9 +106,6 @@ export default {
         if (!this.checkSpecialChar()) {
           return 'E-mail skal indeholde "@"-tegnet.';
         }
-        // if(this.subject == ''){
-        //     return 'Emne skal udfyldes.';
-        // }   
         if(this.message == ''){
             return 'Besked skal udfyldes.';
         }
@@ -132,41 +130,9 @@ export default {
       .catch((err) => console.log(err));
     },
     checkSpecialChar() {
-        // let specialCharacter = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
-        // return specialCharacter.test(e);
       const specialCharacter = /@/;
       return specialCharacter.test(this.from);
     },
-    // isLowerCase() {
-    //     let lowerCaseLetters = /[a-z]/g;
-    //     if(input.value.match(lowerCaseLetters)) {
-    //         return true;
-    //     } 
-    //     return false;
-    // },
-
-    // isUpperCase() {
-    //     let upperCaseLetters = /[A-Z]/g;
-    //     if(input.value.match(upperCaseLetters)) {
-    //         return true;
-    //     }
-    //     return false;
-    // },
-    // showHideBtn() {
-    //     var x = document.getElementById("passwordInput");
-    //     var y = 'Show';
-    //     var z = 'Hide';
-    //     if (x.type === "password") {
-    //         document.getElementById("buttonShowHide").textContent = z;
-    //     x.type = "text";
-    //     } else {
-    //         document.getElementById("buttonShowHide").textContent = y;
-    //     x.type = "password";
-    //     }
-    // }
   }
 }
 </script>
-
-<style>
-</style>

@@ -19,9 +19,7 @@
 </template>
 
 <script>
-import OverlayNavigation from './OverlayNavigation.vue';
 export default {
-  components: { OverlayNavigation },
   name: 'MenuHeader',
   data() {
     return {
@@ -30,10 +28,10 @@ export default {
   },
   methods: {
     goToHome() {
-      this.$router.push('/')
+      this.$router.push('/') //ligesom a href til home
     },
     toggleNav() {
-      this.isOpen = !this.isOpen;
+      this.isOpen = !this.isOpen; 
     },
   }
 }
