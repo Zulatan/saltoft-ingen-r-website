@@ -1,3 +1,19 @@
+* {
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 10px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background: #eeeeee;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #b0b0b0;
+      }
+}
 .content-wrapper {
     background-color: white;
     padding: 120px 40px;
@@ -17,6 +33,7 @@
     .projekt-container {
         overflow: scroll;
         position: relative;
+        
         .projekt-container-billede-wrapper {
             position: relative;
             display: flex;
@@ -54,6 +71,7 @@
                 &:hover::before {
                     opacity: 1;
                 }
+
             }
         }
     }
