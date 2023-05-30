@@ -1,7 +1,8 @@
 <template>
     <div>
         <ProjectHero/>
-        <ProjectImageGrid/>
+        <!-- <ProjectImageGrid/> -->
+        <UdvalgteProjekter/>
     </div>
 </template>
 
@@ -24,5 +25,4 @@ export default {
 
 <style lang="scss">
   // @import './assets/scss/projectgrid.scss';
-
 </style>
