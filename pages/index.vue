@@ -35,6 +35,19 @@
 <script>
 import BackgroundVideo from '@/components/BackgroundVideo.vue';
 export default {
+  head() {
+    return {
+      title: 'Saltoft Ingeniør A/S',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Forsiden af hjemmesiden som indeholder produkter, services, kontaktmuligheder, tlf-nummer.' },
+        { name: "keywords", content: "Saltoft Ingeniør, forside, Ingeniørhjemmeside, byggevirksomhed" },
+        { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+        { property: "og:title", content: "Saltoft Ingeniør, byggeteknisk virksomhed" },
+        { property: "og:description", content: "Se vores produkter og services." },
+        { name: "robots", content: "index, follow" },
+      ]
+    }
+  },
   name: 'IndexPage',
   components: {
     BackgroundVideo,

@@ -13,6 +13,19 @@
 <script>
 
 export default {
+    head() {
+    return {
+      title: 'Kontakt | Saltoft Ingeniør A/S',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Kontakt Saltoft Ingeniør gennem for kontaktformular eller ring direkte til os. Find og på Google Maps.' },
+        { name: "keywords", content: "Kontakt os, kontantformular, Google Maps, Lokation, Telefonnummer, ring til os" },
+        { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+        { property: "og:title", content: "Saltoft Ingeniør, byggeteknisk virksomhed" },
+        { property: "og:description", content: "Kontakt Saltoft Ingeniør via vores kontaktformular eller ring direkte til os." },
+        { name: "robots", content: "index, follow" },
+      ]
+    }
+  },
     name: 'ContactPage',
     data () {
     return {

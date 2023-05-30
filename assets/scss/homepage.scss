@@ -81,11 +81,6 @@
     position: relative;
     z-index: 1;
     .hero-background-image-container {
-        // background-image: url("/images/hero-img.jpg");
-        // transform: scaleX(-1);
-        // background-position: center;
-        // background-repeat: no-repeat;
-        // background-size: cover;
         height: 100vh;
         width: 100%;
         position: relative;
@@ -199,7 +194,7 @@
         }
         #box-two::before {
             content: "";
-            background-image: url('/icons/zap.svg');
+            background-image: url('assets/icons/check-circle.svg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
@@ -209,7 +204,7 @@
         }
         #box-three::before {
             content: "";
-            background-image: url('/icons/trending-up.svg');
+            background-image: url('assets/icons/heart.svg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
