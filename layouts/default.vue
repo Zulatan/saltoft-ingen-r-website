@@ -1,11 +1,10 @@
 <template>
-    <div>
-        <MenuHeader/>
-        
-    
-        <div class="content">
-            <Nuxt/>
-            <Footer/>
-        </div>
+  <div>
+    <MenuHeader />
+
+    <div class="content">
+      <Nuxt />
+      <SiteFooter />
     </div>
+  </div>
 </template>
