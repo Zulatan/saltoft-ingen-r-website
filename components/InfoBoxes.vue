@@ -2,7 +2,7 @@
     <section style="background-color: white;">
         <div class="tilbyder-section">
                 <div class="tegning-grafik">
-                    <img src="../assets/images/grafik.png" alt="">
+                    <img src="../assets/images/grafik.png" alt="grafik af ingeniørtegning">
                 </div>
             <div class="header-wrapper">
                 <div class="header-container">

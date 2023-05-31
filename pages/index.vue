@@ -5,7 +5,7 @@
         <div class="hero">
             <div class="hero-background-image-container">
                 <div class="hero-overlay"></div>
-                <img src="../assets/images/hero-bg.png" alt="frontpage background image">
+                <img src="../assets/images/hero-bg.avif" alt="frontpage background image">
             </div>
             <div class="hero-content-wrapper">
                 <div class="content-header-container">
@@ -17,7 +17,7 @@
                         Vi kan sørge for et stærkt samarbejde med god kommunikation og kunden taget i hånden fra start projekt til slut.</p>
                 </div> -->
                 <div class="content-buttons-container">
-                    <a href="">Projekter</a> 
+                    <a href="projekt">Projekter</a> 
                     <a href="kontakt">Kontakt</a>
                 </div>
             </div>

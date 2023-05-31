@@ -2,7 +2,7 @@
     <div style="padding: 0 0 80px 0;">
         <div class="omos-quote-wrapper">
             <div class="omos-quote-container">
-                <img src="../assets/images/omos-bg.png" alt="om os image">
+                <img src="../assets/images/omos-bg.avif" alt="om os andet billede">
             </div>
             <div class="omos-quote-text-container">
                 <div class="omos-text-wrapper">

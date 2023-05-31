@@ -3,7 +3,7 @@
         <div class="footer-section">
             <div class="footer-graphic-container">
                 <div class="footer-graphic">
-                    <img src="../assets/images/footer-bg.png" alt="grafik af arkitekt/ingeniør tegninger">
+                    <img src="../assets/images/footer-bg.avif" alt="grafik af arkitekt/ingeniør tegninger">
                 </div>
             </div>
             <div class="footer-wrapper">
@@ -27,12 +27,6 @@
                             <a href="mailto:kontakt@si.dk" target="_blank">kontakt@si.dk</a>
                             <a href="tel:+4540474650">+45 40 47 46 50</a>
                         </div>
-                        <!-- <div class="legal">
-                            <h3>LEGAL</h3>
-                            <a href="">Terms & services</a>
-                            <a href="">Cookies</a>
-                            <a href="">CVR: 324324424</a>
-                        </div> -->
                     </div>
                 </div>
             </div>

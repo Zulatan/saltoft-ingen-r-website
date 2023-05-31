@@ -52,10 +52,10 @@
         </div>
         <!-- <p>{{errormessage}}</p> -->
       </div>
-      <div v-if="emailsent">Thank you for your message. We will get back to you as soon as possible!</div>
+      <div v-if="emailsent">Tak for din besked, vi vender tilbage hurtigst muligt!</div>
     </div>
     
-    <div class="kontakt-bg"><img src="../assets/images/kontakt-bg.png" alt=""></div>
+    <div class="kontakt-bg"><img src="../assets/images/kontakt-bg.avif" alt="billede af mennesker ved et bord"></div>
     <div class="bg-overlay"></div>
   </div>
 </template>

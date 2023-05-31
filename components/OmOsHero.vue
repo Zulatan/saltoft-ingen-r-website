@@ -2,7 +2,7 @@
     <div>
         <div class="omos-hero-wrapper">
             <div class="omos-image-container">
-                <img src="../assets/images/omos-img.png" alt="om os image">
+                <img src="../assets/images/omos-img.avif" alt="om os første billede">
             </div>
             <div class="omos-text-container">
                     <h1>Hvem er Saltoft Ingeniør?</h1>

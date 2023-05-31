@@ -10,7 +10,7 @@
           </div>
         </div>
         <div class="omos-content-right-container">
-          <img src="../assets/images/omos-mathi.png" alt="picture of mathias saltoft koch">
+          <img src="../assets/images/omos-mathi.avif" alt="billede af Mathias Saltoft Koch">
         </div>
       </div>
     </div>
