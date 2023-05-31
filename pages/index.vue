@@ -1,7 +1,6 @@
 <template>
   <div>
     <section style="background-color: white;">
-            <!-- <BackgroundVideo/> -->
         <div class="hero">
             <div class="hero-background-image-container">
                 <div class="hero-overlay"></div>
@@ -33,7 +32,6 @@
 </template>
 
 <script>
-import BackgroundVideo from '@/components/BackgroundVideo.vue';
 export default {
   head() {
     return {
@@ -50,7 +48,6 @@ export default {
   },
   name: 'IndexPage',
   components: {
-    BackgroundVideo,
   },
 }
 </script>

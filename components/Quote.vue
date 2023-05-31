@@ -8,7 +8,7 @@
             <div class="parallax-text-overlay"></div>
             <div class="parallax-image-wrapper">
                 <div class="parallax-image-container">
-                    <img src="../assets/images/parralax-img.avif" alt="image of copenhagen used to make parallax effect">
+                    <img src="../assets/images/parralax-img-opti.jpg" alt="image of copenhagen used to make parallax effect">
                 </div>
             </div>
         </section>
